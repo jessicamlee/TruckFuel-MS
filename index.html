@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Truck Fuel Modeling System</title>
+        <link rel="icon" href="#" type="image/icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
@@ -61,16 +62,27 @@
                     <h2>Fuel&dash;Factor Visualization</h2>
                     <p>Blurb about truck traveling with a starting & fixed payload of coal&period;</p>
                 </section>
-                <section class="container">
-                    <h2>Calculate Here</h2>
-                    <!-- Select Truck Type -->
-                    <div>
-                        <h3></h3>
+                <section class="container calculator">
+                    <h2>Fuel Usage Calculator</h2>
+                    <div class="truck-type-container flex">
+                        <div id="truckOne" class="truck-type truck-1"></div>
+                        <div id="truckTwo" class="truck-type truck-2"></div>
+                        <div id="truckThree" class="truck-type truck-3"></div>
+                        <div id="truckFour" class="truck-type truck-4"></div>
+                        <div id="truckFive" class="truck-type truck-5"></div>
                     </div>
-                </section>
-                <section class="container">
-                    <!-- Results -->
-                    <h2>Results Here</h2>
+                    <div>
+                        <h3>Selection&colon; <span id="selectedTruck"></span></h3>
+                        <p>Fuel Efficiency at <span id="fuelEff"></span>km/L</p>
+                        <form id="inputForm" class="input-container">
+                            <input type="number" name="payload" id="payload" placeholder="Payload (kg)">
+                            <input type="number" name="time" id="time" placeholder="Time (hour)">
+                        </form>
+                        <button id="calculate" class="btn calc-btn">Calculate</button>
+                        <button id="reset" class="btn">Reset</button>
+                        <h3>Results</h3>
+                        <div id="result"></div>
+                    </div>
                 </section>
                 <section id="contact-us" class="container">
                     <h2>Contact Us</h2>
