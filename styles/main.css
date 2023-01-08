@@ -284,4 +284,51 @@ svg {
         height: 14.375rem;
         width: 100%;
     }
+
+    .cart-animation .rocks {
+        height: 1.5rem;
+        position: absolute;
+    }
+
+    .cart-animation .rock-carabrown {
+        bottom: 18.75rem;
+        animation: bouncing 1s alternate infinite;
+    }
+
+    .cart-animation .rock-chesbrown {
+        bottom: 18rem;
+        left: 40rem;
+        animation: bouncing 1s alternate infinite;
+        animation-delay: 0.2s;
+    }
+
+    .cart-animation .rock-greybrown {
+        bottom: 17.5rem;
+        left: 20rem;
+        animation: bouncing 1s alternate infinite;
+        animation-delay: 10ms;
+    }
+
+    .cart-animation .rock-sandtan {
+        bottom: 17rem;
+        left: 25rem;
+        animation: bouncing 1s alternate infinite;
+        animation-delay: 1.2s;
+    }
+
+    .cart-animation .rock-tangreen {
+        bottom: 17rem;
+        left: 10rem;
+        animation: bouncing 1s alternate infinite;
+        animation-delay: 0.5;
+    }
+
+    @keyframes bouncing {
+        0%{
+            transform:translateY(0) scale(1) rotate(0);
+        }
+        100%{
+            transform:translateY(-100px) scale(1.5) rotate(260deg);
+        }
+    }
 }
