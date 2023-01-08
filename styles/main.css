@@ -155,6 +155,53 @@ header .logo {
     font-weight: 600;
 }
 
+/* --- Calculator --- */
+.calculator .truck-type-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.57rem 18.25rem 3.25rem;
+}
+
+.calculator .truck-type {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+}
+
+.calculator .truck-1 {
+    background-color: skyblue;
+}
+
+.calculator .truck-2 {
+    background-color: violet;
+}
+
+.calculator .truck-3 {
+    background-color: lightgreen;
+}
+
+.calculator .truck-4 {
+    background-color: lightgoldenrodyellow;
+}
+
+.calculator .truck-5 {
+    background-color: orange;
+}
+
+.calculator .input-container {
+    margin: 2.0625rem auto 2.625rem;
+}
+
+.calculator input[type=number] {
+    width: 28.75rem;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    border: 0.125rem solid #ccc;
+    border-radius: 0.25rem;
+    flex-direction: column;
+}
+
 /* --- Media Queries --- */
 
 @media(min-width:450px) {

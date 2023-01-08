@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Truck Fuel Modeling System</title>
+        <link rel="icon" href="#" type="image/icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
@@ -52,16 +53,46 @@
                     <h2>Fuel&dash;Factor Visualization</h2>
                     <p>Blurb about truck traveling with a starting & fixed payload of coal&period;</p>
                 </section>
-                <section class="container">
-                    <h2>Calculate Here</h2>
+                <section class="container calculator">
+                    <h2>Fuel Usage Calculator</h2>
                     <!-- Select Truck Type -->
+                    <div class="truck-type-container flex">
+                        <!-- 5 Truck Types -->
+                        <div class="truck-type truck-1">
+                            <!-- Insert Truck Graphic Here -->
+                        </div>
+                        <div class="truck-type truck-2">
+                            <!-- Insert Truck Graphic Here -->
+                        </div>
+                        <div class="truck-type truck-3">
+                            <!-- Insert Truck Graphic Here -->
+                        </div>
+                        <div class="truck-type truck-4">
+                            <!-- Insert Truck Graphic Here -->
+                        </div>
+                        <div class="truck-type truck-5">
+                            <!-- Insert Truck Graphic Here -->
+                        </div>
+                    </div>
                     <div>
-                        <h3></h3>
+                        <!-- Add Form Here -->
+                        <h3>Selection&colon;</h3>
+                        <div class="input-container">
+                            <input type="number" name="distance" id="distance" placeholder="Distance (km)">
+                            <input type="number" name="time" id="time" placeholder="Time (hour)">
+                            <input type="number" name="elevation" id="elevation" placeholder="Elevation (m)">
+                            <input type="number" name="payload" id="payload" placeholder="Payload (kg)">
+                        </div>
+                        <button onclick="calculate()" class="btn">Calculate</button>
+                        <button onclick="reset()" class="btn">Reset</button>
                     </div>
                 </section>
                 <section class="container">
                     <!-- Results -->
-                    <h2>Results Here</h2>
+                    <h2>Results</h2>
+                    <div id="results">
+                        <!-- Equivalent to "feedback" -->
+                    </div>
                 </section>
                 <section id="contact-us" class="container">
                     <h2>Contact Us</h2>
