@@ -60,10 +60,9 @@
                 </section>
                 <section class="container">
                     <h2>Fuel&dash;Factor Visualization</h2>
-                    <p>Blurb about truck traveling with a starting & fixed payload of coal&period;</p>
-                    <!-- GSAP animation -->
+                    <p>If this truck is carrying a fixed cargo weight of 250kg&comma; using the buttons below can help visualize how accelerating impacts the fuel rate&period; Try clicking the buttons to see how the truck haul cycle looks&excl;</p>
                     <div class="background">
-                        <img class="truck" src="Images/truck.svg" width="180px"/>
+                        <img class="truck" src="images/truck.svg" width="180px"/>
                         <div class="ground"></div>
                     </div>
                     <div class="control">
@@ -73,9 +72,9 @@
                         <div class="btn" id="reset">reset</div>
                     </div>
                 </section>
-                <section class="container calculator">
+                <section id="calculator" class="container calculator">
                     <h2>Fuel Usage Calculator</h2>
-                    <p>Blurb about truck traveling with a starting/fixed payload, & explanation of the (changing) Fuel Rate value.</p>
+                    <p>Use the fuel usage calculator to show how many Liters your truck used for your haul cycle journey&excl; After choosing your truck and choosing a cargo load and trip length&comma; you can see how the fuel efficiency level of different truck types result in less fuel&period;</p>
                     <div class="calculator-box flex">
                         <div class="truck-type-container flex">
                             <div id="truckOne" class="truck-type truck-1">
@@ -205,10 +204,12 @@
                             </div>
                             <button id="calculate" class="btn calc-btn"><p>Calculate</p></button>
                             <button id="reset" class="btn"><p>Reset</p></button>
-                            <h3>Results</h3>
-                            <div id="result">Add values to get results&excl;</div>
                         </div>
                     </div>
+                    <h3>Results</h3>
+                    <p>Based off of the inputted numbers for both the Payload and length of the haul cycle journey used for calculation&comma; the outcome of the calculation shows the fuel usage of the selected truck&period; After playing around with the Fuel Usage Calculator&comma; you can see how certain trucks use less fuel&excl;</p>
+                    <p>By choosing the most fuel efficient truck&comma; we can make sure that we help do better for our environment&period; Burning less fuel helps mining companies be more sustainable&comma; and this important consideration can result in better operations&period;</p>
+                    <p>Calculation Results&colon; <span id="result">Add values to get results&excl;</span></p>
                 </section>
                 <section id="contact-us" class="container contact-us flex">
                     <h2>Contact Us</h2>

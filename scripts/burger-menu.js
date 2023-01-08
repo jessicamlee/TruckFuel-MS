@@ -49,10 +49,6 @@ jQuery(function($) {
         }
     });
 
-    $('.gn a').on('click', function(e){
-        closeNav();
-    });
-
     function closeNav() {
         $($burger).removeClass('is-active');
         $($gnav).slideUp();
