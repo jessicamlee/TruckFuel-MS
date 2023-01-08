@@ -13,7 +13,7 @@ Our project is a one-page informative and visual tool for kids to help them unde
 
 ## How we built it
 - Wireframes: Hand-Drawn & Figma
-- Development: VS code, HTML5, CSS3, JavaScript
+- Development: VS code, HTML5, CSS3, JavaScript, GSAP
 - Illustrations: Adobe Illustrator 
 
 ## Challenges we ran into

@@ -10,31 +10,26 @@ var reset = document.getElementById("reset");
 function selectTruckOne() {
     document.getElementById("selectedTruck").innerHTML = "BelAZ 75710 Dump Truck";
     document.getElementById("fuelEff").innerHTML = "1300";
-    document.getElementById("result").innerHTML = "Add values to get results!";
 }
 
 function selectTruckTwo() {
     document.getElementById("selectedTruck").innerHTML = "Caterpillar 797F Dump Truck";
     document.getElementById("fuelEff").innerHTML = "784";
-    document.getElementById("result").innerHTML = "Add values to get results!";
 }
 
 function selectTruckThree() {
     document.getElementById("selectedTruck").innerHTML = "Liebherr T284 Dump Truck";
     document.getElementById("fuelEff").innerHTML = "28";
-    document.getElementById("result").innerHTML = "Add values to get results!";
 }
 
 function selectTruckFour() {
     document.getElementById("selectedTruck").innerHTML = "Terex/Bucyrus MT6300AC Dump Truck";
     document.getElementById("fuelEff").innerHTML = "32";
-    document.getElementById("result").innerHTML = "Add values to get results!";
 }
 
 function selectTruckFive() {
     document.getElementById("selectedTruck").innerHTML = "The Komatsu 960E-1 Dump Truck";
     document.getElementById("fuelEff").innerHTML = "35";
-    document.getElementById("result").innerHTML = "Add values to get results!";
 }
 
 truckOne.addEventListener("click", selectTruckOne);
