@@ -56,7 +56,7 @@ header {
     align-items: center;
     will-change: top;
     transition: top 0.35s ease;
-    z-index: 2;
+    z-index: 3;
 }
 
 header .header-bar {
@@ -184,6 +184,7 @@ header .logo {
 .calculator .truck-type {
     width: 5rem;
     height: 2.5rem;
+    cursor: pointer;
 }
 
 .calculator .input-container {
@@ -239,6 +240,18 @@ svg {
 
 .contact-us a {
     border-bottom: #212121 solid 0.05rem;
+    cursor: pointer;
+}
+
+/* --- Cart Animation --- */
+.cart-animation {
+    height: 25rem;
+    z-index: -1;
+}
+
+.cart-animation .tunnel-path,
+.cart-animation .four-carts {
+    display: none;
 }
 
 /* --- Media Queries --- */
@@ -251,5 +264,24 @@ svg {
 @media(min-width:768px) {
     .calculator input[type=number] {
         min-width: 28.75rem;
+    }
+}
+
+@media(min-width:1024px) {
+    .cart-animation .tunnel-path {
+        display: block;
+        position: relative;
+        height: 37.5rem;
+        top: -12.5rem;
+        width: 100%;
+    }
+    
+    .cart-animation .four-carts {
+        display: block;
+        position: absolute;
+        bottom: 6.25rem;
+        left: -0.25rem;
+        height: 14.375rem;
+        width: 100%;
     }
 }
