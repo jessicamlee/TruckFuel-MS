@@ -1,0 +1,13 @@
+gsap.registerPlugin(MotionPathPlugin);
+gsap.to("#bike",{
+    duration:8.5,
+    yoyo:true,
+    repeat:-1,
+    ease:"power1.inOut",
+    motionPath:{
+        path:"#path",
+        align:"#path",
+        autoRotate:true,
+        alignOrigin:[.1,.2]
+    }
+})
