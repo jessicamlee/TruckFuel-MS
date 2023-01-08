@@ -189,7 +189,7 @@ header .logo {
 }
 
 .calculator .input-container {
-    margin: 2.0625rem auto 2.625rem;
+    margin: 2.0625rem auto 1.125rem;
 }
 
 .calculator input[type=number] {
@@ -200,6 +200,10 @@ header .logo {
     border: 0.125rem solid #ccc;
     border-radius: 0.25rem;
     flex-direction: column;
+}
+
+.calculator .calc-btn {
+    margin-bottom: 4.08rem;
 }
 
 /* --- Media Queries --- */
