@@ -1,14 +1,14 @@
 /* --- Global --- */
 body {
-    background: #212121;
-    color: #fff;
+    background: #fff;
+    color: #212121;
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
 }
 
 section {
-    padding: 4rem 1.5rem;
+    padding: 4.25rem 1.5rem;
 }
 
 li {
@@ -17,8 +17,13 @@ li {
 }
 
 a {
-    color: #fff;
+    color: #212121;
     text-decoration: none;
+}
+
+/* --- Typography --- */
+h3 {
+    font-size: 1.44rem;
 }
 
 /* --- Helpers --- */
@@ -52,12 +57,15 @@ header {
 
 header .header-bar {
     align-items: center;
+    justify-content: space-between;
 }
 
 header .logo {
-    width: 4rem;
-    height: 4rem;
-    align-items: center;
+    width: 45px;
+    height: 80px;
+    margin-left: 20px;
+    padding: 2px;
+    z-index: -1;
 }
 
 .gn-trigger {
@@ -67,7 +75,6 @@ header .logo {
     border: none;
     outline: 0;
     background: transparent;
-    /* margin-left: auto; */
     cursor: pointer;
 }
 
@@ -156,44 +163,33 @@ header .logo {
 }
 
 /* --- Calculator --- */
+.calculator .calculator-box {
+    max-width: 29.125rem;
+    margin: 0 auto;
+    flex-direction: column;
+}
 .calculator .truck-type-container {
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 1.57rem 18.25rem 3.25rem;
+    margin: 1.57rem 0 3.25rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .calculator .truck-type {
-    width: 2rem;
-    height: 2rem;
-    background-color: #fff;
-}
-
-.calculator .truck-1 {
-    background-color: skyblue;
-}
-
-.calculator .truck-2 {
-    background-color: violet;
-}
-
-.calculator .truck-3 {
-    background-color: lightgreen;
-}
-
-.calculator .truck-4 {
-    background-color: lightgoldenrodyellow;
-}
-
-.calculator .truck-5 {
-    background-color: orange;
+    width: 5rem;
+    height: 2.5rem;
 }
 
 .calculator .input-container {
     margin: 2.0625rem auto 1.125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .calculator input[type=number] {
-    width: 28.75rem;
+    width: 80vw;
     height: 2.5rem;
     margin-bottom: 2rem;
     box-sizing: border-box;
@@ -207,7 +203,6 @@ header .logo {
 }
 
 /* --- Body Content --- */
-
 .banneranim-container {
     width: 110%;
     position: relative;
@@ -218,10 +213,38 @@ svg {
     overflow: visible;
 }
 
-/* --- Media Queries --- */
+/* --- Contact Us --- */
+.contact-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.contact-us p {
+    margin-top: 0;
+}
+
+.contact-us .creator-links {
+    text-align: left;
+}
+
+.contact-us li {
+    margin-bottom: 0.8rem;
+}
+
+.contact-us a {
+    border-bottom: #212121 solid 0.05rem;
+}
+
+/* --- Media Queries --- */
 @media(min-width:450px) {
     footer .hidden {
         display: none;
+    }
+}
+
+@media(min-width:768px) {
+    .calculator input[type=number] {
+        min-width: 28.75rem;
     }
 }
