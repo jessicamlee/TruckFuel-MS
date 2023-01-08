@@ -1,9 +1,7 @@
 # Truck Fuel Modelling Simulator (TFMS)
 TFMS is an education-based fuel-visualization tool for kids, calculating the optimal fuel consumption for trucks while considering several mining factors throughout the haul cycle. 
 
-Check out the **[Truck Fuel Modelling Simulator](https://github.com/jessicamlee/TruckFuel-MS)**!
-
-*link to be updated*
+Check out the **[Truck Fuel Modelling Simulator](https://truckfuelms.jessicamlee.dev/)**!
 
 ## The Inspiration
 Our inspiration was derived from the challenge(s) that the QDS 2023 Hackathon presented us with. As New Media Design and Web Development students, we focus on multi-media design and front-end development, and every so slightly scratch the surface of back-end development. As a result, we were out of our comfort zone and it inspired us to brainstorm ways that we can complete a similar task that aligns with our skillset while ensuring that the project is still challenging. In brainstorming ideas, our inspiration ultimately rose from our past projects, research, as well as the information given to us.
