@@ -162,6 +162,60 @@ header .logo {
     font-weight: 600;
 }
 
+/* --- Banner Animation --- */
+.banneranim-container {
+    width: 110%;
+    position: relative;
+    left: -1.5rem;
+}
+
+svg {
+    overflow: visible;
+}
+
+/* --- Interactive GSAP Truck Animation --- */
+.background {
+    height: 260px;
+    width: 100vw;
+    background-color: #F5F5F5;
+    z-index: -3;
+    margin-bottom: 40px;
+    margin-left: -358px;
+}
+.truck {
+    margin: 20px; 
+    z-index: 2;
+    position: relative; 
+    bottom: -178px; 
+}
+.ground {
+    width: 100vw; 
+    height: 16px; 
+    background-color: rgb(66, 66, 66); 
+    position: relative;
+    top: 151px;
+}
+.btn {
+    width: 100px; 
+    height: 25px; 
+    margin: 10px; 
+    border-radius: 10%; 
+    cursor: pointer; 
+    background-color:rgb(126, 124, 126); 
+    text-transform: uppercase;
+    text-align: center; 
+    line-height: 25px; 
+    color: white; 
+    font-size: 12px;
+}
+.btn:hover {
+    background-color: rgb(166, 163, 168);
+}
+.control {
+    display: flex;
+    justify-content: center;
+}
+
 /* --- Calculator --- */
 .calculator .calculator-box {
     max-width: 29.125rem;
@@ -200,17 +254,6 @@ header .logo {
 
 .calculator .calc-btn {
     margin-bottom: 4.08rem;
-}
-
-/* --- Body Content --- */
-.banneranim-container {
-    width: 110%;
-    position: relative;
-    left: -1.5rem;
-}
-
-svg {
-    overflow: visible;
 }
 
 /* --- Contact Us --- */
