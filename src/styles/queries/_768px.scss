@@ -1,0 +1,29 @@
+@media(min-width:768px) {
+    
+    .gn-trigger {
+        display: none;
+    }
+    
+    .gn {
+        display: block;
+        position: static;
+        top: 0;
+        height: auto;
+        box-shadow: 0;
+
+        ul {
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 1.5rem;
+        }
+
+        li {
+            padding: 0;
+        }
+    }
+
+    .calculator input[type=number] {
+        min-width: 28.75rem;
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,9 @@
+.cart-animation {
+    height: 4rem;
+    z-index: -1;
+
+    .tunnel-path,
+    .four-carts {
+        display: none;
+    }
+}

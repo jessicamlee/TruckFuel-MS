@@ -1,0 +1,22 @@
+.contact-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin-top: 0;
+    }
+
+    .creator-links {
+        text-align: left;
+    }
+
+    li {
+        margin-bottom: 0.8rem;
+    }
+
+    a {
+        border-bottom: #212121 solid 0.05rem;
+        cursor: pointer;
+    }
+}
