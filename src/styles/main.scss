@@ -1,4 +1,5 @@
-@use '../scripts/global/reset';
-@use '../scripts/global/global';
-@use '../scripts/partials/partials' as *;
-@use '../scripts/queries/queries' as *;
+@use '../styles/global/reset';
+@use '../styles/global/global';
+@use '../styles/landing/landing';
+@use '../styles/partials/partials' as *;
+@use '../styles/queries/queries' as *;
