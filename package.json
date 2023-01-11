@@ -1,0 +1,26 @@
+{
+  "name": "truckfuel-ms",
+  "description": "TFMS is an education-based fuel-visualization tool for kids, calculating the optimal fuel consumption for trucks while considering several mining factors throughout the haul cycle.",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicamlee/TruckFuel-MS.git"
+  },
+  "author": "Chaotic Trio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicamlee/TruckFuel-MS/issues"
+  },
+  "homepage": "https://github.com/jessicamlee/TruckFuel-MS#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0"
+  }
+}

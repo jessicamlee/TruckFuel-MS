@@ -1,0 +1,407 @@
+/* --- Global --- */
+body {
+    background: #fff;
+    color: #212121;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+section {
+    padding: 4.25rem 1.5rem;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    color: #212121;
+    text-decoration: none;
+}
+
+/* --- Typography --- */
+h1 {
+    margin-top: 4rem;
+}
+
+h3 {
+    font-size: 1.44rem;
+}
+
+/* --- Helpers --- */
+.wrapper {
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+/* --- Header --- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0.9rem 0;
+    background-color: #fff;
+    align-items: center;
+    will-change: top;
+    transition: top 0.35s ease;
+    z-index: 3;
+}
+
+header .header-bar {
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: auto;
+    height: 3.125rem;
+    margin-left: 1rem;
+    padding: 0.125rem;
+    z-index: -1;
+}
+
+.gn-trigger {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.gn-trigger .burger-menu {
+    position: absolute;
+    width: 2.75rem;
+    height: 0.2rem;
+    background-color: #212121;
+    border-radius: 1.5rem;
+    top: 35%;
+    right: 0;
+}
+
+.gn-trigger .burger-menu:before,
+.gn-trigger .burger-menu:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 2.75rem;
+    height: 0.2rem;
+    background-color: #212121;
+    border-radius: 1.5rem;
+    box-shadow: 0px 3px 7px -1px box-shadow;
+}
+
+.gn-trigger .burger-menu:before {
+    top: -0.75rem;
+    right: 0;
+}
+
+.gn-trigger .burger-menu:after {
+    top: 0.75rem;
+    right: 0;
+}
+
+.burger-menu,
+.burger-menu:before,
+.burger-menu:after {
+    transition: transform top background;
+    transition-duration: 0.5s;
+}
+
+.gn-trigger.is-active .burger-menu {
+    width: 0;
+}
+
+.gn-trigger.is-active .burger-menu:before,
+.gn-trigger.is-active .burger-menu:after {
+    background-color: #212121;
+    top: 0;
+    right: 0;
+}
+
+.gn-trigger.is-active .burger-menu:before {
+    transform: rotate(400deg);
+}
+
+.gn-trigger.is-active .burger-menu:after {
+    transform: rotate(-400deg);
+}
+
+.gn {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    margin-right: 1rem;
+    width: 100vw;
+    background-color: inherit;
+}
+
+.gn ul {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: inherit;
+}
+
+.gn li {
+    padding: 2rem;
+}
+
+.gn a {
+    color: #212121;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* --- Banner Animation --- */
+.banneranim-container {
+    width: 110%;
+    position: relative;
+    left: -1.5rem;
+}
+
+svg {
+    overflow: visible;
+}
+
+/* --- Interactive GSAP Truck Animation --- */
+.background {
+    height: 16.25rem;
+    width: 100rem;
+    background-color: #F5F5F5;
+    z-index: -3;
+    margin-bottom: 2.5rem;
+    margin-left: -22.375rem;
+}
+.truck {
+    margin: 1.25rem; 
+    z-index: 2;
+    position: relative; 
+    bottom: -9.875rem; 
+}
+.ground {
+    width: 100rem; 
+    height: 1rem; 
+    background-color: rgb(66, 66, 66); 
+    position: relative;
+    top: 8rem;
+}
+.btn {
+    width: 6.25rem; 
+    height: 1.5rem; 
+    margin: 0.625rem; 
+    border-radius: 0.625rem; 
+    cursor: pointer; 
+    background-color:rgb(126, 124, 126); 
+    text-transform: uppercase;
+    text-align: center; 
+    line-height: 1.5rem; 
+    color: white; 
+    font-size: 0.75rem;
+}
+.btn p {
+    margin: -0.2rem 0 0;
+}
+.btn:hover {
+    background-color: rgb(166, 163, 168);
+}
+.control {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Calculator --- */
+.calculator .calculator-box {
+    max-width: 29.125rem;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.calculator .truck-type-container {
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1.57rem 0 3.25rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.calculator .truck-type {
+    width: 5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.calculator .input-container {
+    margin: 2.0625rem auto 1.125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator input[type=number] {
+    width: 80vw;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    border: 0.125rem solid #ccc;
+    border-radius: 0.25rem;
+    flex-direction: column;
+}
+
+.calculator .calc-btn {
+    margin-bottom: 4.08rem;
+}
+
+/* --- Contact Us --- */
+.contact-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us p {
+    margin-top: 0;
+}
+
+.contact-us .creator-links {
+    text-align: left;
+}
+
+.contact-us li {
+    margin-bottom: 0.8rem;
+}
+
+.contact-us a {
+    border-bottom: #212121 solid 0.05rem;
+    cursor: pointer;
+}
+
+/* --- Cart Animation --- */
+.cart-animation {
+    height: 4rem;
+    z-index: -1;
+}
+
+.cart-animation .tunnel-path,
+.cart-animation .four-carts {
+    display: none;
+}
+
+/* --- Media Queries --- */
+@media(min-width:450px) {
+    footer .hidden {
+        display: none;
+    }
+}
+
+@media(min-width:768px) {
+    .gn {
+        display: block;
+        position: static;
+        top: 0;
+        height: auto;
+        box-shadow: 0;
+    }
+
+    .gn ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+
+    .gn li {
+        padding: 0;
+    }
+
+    .gn-trigger {
+        display: none;
+    }
+
+    .calculator input[type=number] {
+        min-width: 28.75rem;
+        max-width: 50%;
+    }
+}
+
+@media(min-width:1024px) {
+    .cart-animation {
+        height: 25rem;
+    }
+
+    .cart-animation .tunnel-path {
+        display: block;
+        position: relative;
+        height: 37.5rem;
+        top: -12.5rem;
+        width: 100%;
+    }
+    
+    .cart-animation .four-carts {
+        display: block;
+        position: absolute;
+        bottom: 6.25rem;
+        left: -0.25rem;
+        height: 14.375rem;
+        width: 100%;
+    }
+
+    .cart-animation .rocks {
+        height: 1.5rem;
+        position: absolute;
+    }
+
+    .cart-animation .rock-carabrown {
+        bottom: 18.75rem;
+        animation: bouncing 1s alternate infinite;
+    }
+
+    .cart-animation .rock-chesbrown {
+        bottom: 18rem;
+        left: 40rem;
+        animation: bouncing 1s alternate infinite;
+        animation-delay: 0.2s;
+    }
+
+    .cart-animation .rock-greybrown {
+        bottom: 17.5rem;
+        left: 20rem;
+        animation: bouncing 1s alternate infinite;
+        animation-delay: 10ms;
+    }
+
+    .cart-animation .rock-sandtan {
+        bottom: 17rem;
+        left: 25rem;
+        animation: bouncing 1s alternate infinite;
+        animation-delay: 1.2s;
+    }
+
+    .cart-animation .rock-tangreen {
+        bottom: 17rem;
+        left: 10rem;
+        animation: bouncing 1s alternate infinite;
+        animation-delay: 0.5;
+    }
+
+    @keyframes bouncing {
+        0%{
+            transform:translateY(0) scale(1) rotate(0);
+        }
+        100%{
+            transform:translateY(-100px) scale(1.5) rotate(260deg);
+        }
+    }
+}
