@@ -1,0 +1,46 @@
+@use 'helpers';
+@use 'typography';
+
+body {
+    background: #fff;
+    color: #212121;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+section {
+    padding: 4.25rem 1.5rem;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.btn {
+    width: 6.25rem; 
+    height: 1.5rem; 
+    margin: 0.625rem; 
+    border-radius: 0.625rem; 
+    cursor: pointer; 
+    background-color:rgb(126, 124, 126); 
+    text-transform: uppercase;
+    text-align: center; 
+    line-height: 1.5rem; 
+    color: white; 
+    font-size: 0.75rem;
+
+    &:hover {
+        background-color: rgb(166, 163, 168);
+    }
+
+    p {
+        margin: -0.2rem 0 0;
+    }
+}

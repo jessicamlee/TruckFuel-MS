@@ -1,0 +1,70 @@
+@media(min-width:1024px) {
+    
+    .cart-animation {
+        height: 25rem;
+
+        .tunnel-path {
+            display: block;
+            position: relative;
+            height: 37.5rem;
+            top: -12.5rem;
+            width: 100%;
+        }
+
+        .four-carts {
+            display: block;
+            position: absolute;
+            bottom: 6.25rem;
+            left: -0.25rem;
+            height: 14.375rem;
+            width: 100%;
+        }
+
+        .rocks {
+            height: 1.5rem;
+            position: absolute;
+        }
+
+        .rock-carabrown {
+            bottom: 18.75rem;
+            animation: bouncing 1s alternate infinite;
+        }
+
+        .rock-chesbrown {
+            bottom: 18rem;
+            left: 40rem;
+            animation: bouncing 1s alternate infinite;
+            animation-delay: 0.2s;
+        }
+
+        .rock-greybrown {
+            bottom: 17.5rem;
+            left: 20rem;
+            animation: bouncing 1s alternate infinite;
+            animation-delay: 10ms;
+        }
+
+        .rock-sandtan {
+            bottom: 17rem;
+            left: 25rem;
+            animation: bouncing 1s alternate infinite;
+            animation-delay: 1.2s;
+        }
+
+        .rock-tangreen {
+            bottom: 17rem;
+            left: 10rem;
+            animation: bouncing 1s alternate infinite;
+            animation-delay: 0.5;
+        }
+
+        @keyframes bouncing {
+            0%{
+                transform:translateY(0) scale(1) rotate(0);
+            }
+            100%{
+                transform:translateY(-100px) scale(1.5) rotate(260deg);
+            }
+        }
+    }
+}
